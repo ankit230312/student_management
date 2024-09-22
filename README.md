@@ -1,5 +1,3 @@
-To set up and run your PHP project in a local environment, follow these steps:
-
 ### Prerequisites:
 1. **XAMPP, WAMP, or MAMP** installed for a local PHP development environment.
 2. **MySQL** (usually bundled with XAMPP, WAMP, or MAMP).
@@ -58,8 +56,3 @@ If you're on Linux/Mac, ensure the project folder has proper permissions. Run th
 ```bash
 sudo chmod -R 755 /path/to/your/project/
 sudo chown -R www-data:www-data /path/to/your/project/
-```
-
----
-
-Let me know if you need any specific details related to the project!
