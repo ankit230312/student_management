@@ -1,12 +1,6 @@
 <?php include_once('common/header.php');
 ?>
 
-
-
-
-
-
-
 <div class="main-wrapper">
     <div class="row">
         <div class="col">

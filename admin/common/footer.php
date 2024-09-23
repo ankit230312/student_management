@@ -48,14 +48,13 @@
 
 <script>
     setTimeout(function() {
-        var successMsgs = document.getElementsByClassName('alert');  // Remove the dot ('.')
-
-        // Loop through all alert elements and set their display to 'none'
+        var successMsgs = document.getElementsByClassName('alert');  
+        
         for (var i = 0; i < successMsgs.length; i++) {
             successMsgs[i].style.display = 'none';
         }
 
-    }, 2000);  // 2-second timeout
+    }, 2000); 
 </script>
 
 <script>
@@ -65,7 +64,7 @@
       var status = this.checked ? 'Active' : 'Inactive';
 
       $.ajax({
-        url: 'ajax/update_status.php',  // Backend script for updating status
+        url: 'ajax/update_status.php',  
         type: 'POST',
         data: { id: studentId, status: status },
         success: function(response) {

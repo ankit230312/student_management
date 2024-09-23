@@ -5,17 +5,12 @@ include_once('common/auth_header.php');
 $errors = [];
 $successMessage = "";
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {    
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
-    $password = trim($_POST['password']);
-
-    
+    $password = trim($_POST['password']);    
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Invalid email format.";
-    }
-
-    
+    }    
     if (empty($password)) {
         $errors[] = "Password is required.";
     }
